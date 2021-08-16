@@ -1,0 +1,37 @@
+module counter_tb();
+  logic clk, rst, number, display;
+  
+  counter test(clk, rst, number, display);
+  
+  initial begin
+    $display("Start testbench !!! ");
+	 
+    // start -> 0
+	 clk=1;
+	 rst=0;
+	 #10;
+	 
+	 // start -> 1
+	 clk=1;
+	 rst=0;
+	 assert(number == 1) else $error("FAILED: @ #1");
+	 #10;
+	 
+	 // start -> 2
+	 clk=1;
+	 rst=0;
+	 assert(number == 2) else $error("FAILED: @ #2");
+	 #10;
+	 
+	 // start -> 3
+	 clk=1;
+	 rst=0;
+	 assert(number == 3) else $error("FAILED: @ #3");
+	 #10;
+	 
+	 
+
+	end
+
+
+endmodule 

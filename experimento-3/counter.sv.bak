@@ -1,0 +1,12 @@
+module counter(
+  input logic clk,
+  input logic rst,
+  output logic number,
+  output logic [13:0] display
+);
+
+  flip_flop count(clk, rst, number);
+  
+  deco deco_display(number, display);
+
+endmodule 
