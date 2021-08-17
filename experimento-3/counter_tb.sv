@@ -1,46 +1,47 @@
 module counter_tb();
-  logic clk, rst, result;
+  logic clk;
+  logic rst; 
+  logic [13:0] result;
   
   counter test(clk, rst, result);
   
   initial begin
-    $display("Start testbench !!! ");
+    $display("Start testbench 2-bits !!!");
 	 
-	 
-	 // start -
 	 clk=0;
 	 rst=1;
-	 $display(result); // x
 	 #10;
 	 
-    // start -> 0
 	 clk=1;
 	 rst=0;
+	 assert (result === 14'b11111110000001) else $display("SUCCESS: #0");
 	 $display(result); // b11111110000001 = 0
 	 #10;
-	 
-	 // start -> 1
+
 	 clk=1;
 	 rst=0;
+	 assert (result === 14'b11111111001111) else $display("SUCCESS: #0");
 	 $display(result); // b11111111001111 = 1
 	 #10;
 	 
-	 // start -> 2
 	 clk=1;
 	 rst=0;
+	 assert (result === 14'b11111110010010) else $display("SUCCESS: #0");
 	 $display(result); // b11111110010010 = 2
 	 #10;
-	 
-	 // start -> 3
+
 	 clk=1;
 	 rst=0;
+	 assert (result === 14'b11111110000110) else $display("SUCCESS: #0");
 	 $display(result); // b11111110000110 = 3
 	 #10;
 	 
-	 // start -> 4
+	 $display("--- Reset ---");
+	 
 	 clk=0;
 	 rst=1;
-	 $display(result); // b11111110000001 = 0
+	 assert (result === 14'b11111110000001) else $display("SUCCESS: #0");
+	 $display(result);
 	 #10;
 	end
 endmodule 

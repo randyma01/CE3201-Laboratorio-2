@@ -1,7 +1,8 @@
-module flip_flop(
+module flip_flop #(parameter N=6)
+(
   input logic clk,
   input logic rst,
-  output logic number
+  output logic [N-1:0] number
 );
 
   always_ff@(posedge clk, posedge rst)

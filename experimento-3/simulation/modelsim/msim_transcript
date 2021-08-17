@@ -12,71 +12,78 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:48:13 on Aug 17,2021
+# Start time: 10:58:55 on Aug 17,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv 
 # -- Compiling module flip_flop
 # 
 # Top level modules:
 # 	flip_flop
-# End time: 09:48:13 on Aug 17,2021, Elapsed time: 0:00:00
+# End time: 10:58:55 on Aug 17,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:48:13 on Aug 17,2021
+# Start time: 10:58:55 on Aug 17,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv 
 # -- Compiling module deco
 # 
 # Top level modules:
 # 	deco
-# End time: 09:48:13 on Aug 17,2021, Elapsed time: 0:00:00
+# End time: 10:58:55 on Aug 17,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:48:13 on Aug 17,2021
+# Start time: 10:58:55 on Aug 17,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 09:48:13 on Aug 17,2021, Elapsed time: 0:00:00
+# End time: 10:58:55 on Aug 17,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:48:13 on Aug 17,2021
+# Start time: 10:58:55 on Aug 17,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv 
 # -- Compiling module counter_tb
 # 
 # Top level modules:
 # 	counter_tb
-# End time: 09:48:13 on Aug 17,2021, Elapsed time: 0:00:00
+# End time: 10:58:55 on Aug 17,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  counter_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" counter_tb 
-# Start time: 09:48:13 on Aug 17,2021
+# Start time: 10:58:55 on Aug 17,2021
 # Loading sv_std.std
 # Loading work.counter_tb
 # Loading work.counter
 # Loading work.flip_flop
 # Loading work.deco
-# ** Warning: (vsim-3015) [PCDPC] - Port size (14) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /counter_tb/test File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 4
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ranmsy  Hostname: RANDYMARTINC4C4  ProcessID: 5632
+#           Attempting to use alternate WLF file "./wlft4st0qi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4st0qi
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Start testbench !!! 
-# x
-# 1
-# 1
-# 1
-# 1
-# 1
-run -all
-run
-# End time: 09:50:01 on Aug 17,2021, Elapsed time: 0:01:48
-# Errors: 0, Warnings: 1
+# Start testbench 2-bits !!! 
+#     x
+# 16257
+# 16335
+# SUCCESS: #0
+# 16335
+# SUCCESS: #0
+# 16335
+# Start testbench 4-bits !!! 
+# Start testbench 6-bits !!! 
+# Reset !!! 
+# SUCCESS: #0
+# 16335
+# End time: 10:59:28 on Aug 17,2021, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 2

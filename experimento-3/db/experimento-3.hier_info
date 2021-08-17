@@ -18,26 +18,46 @@ result[13] << deco:deco_display.port1
 
 
 |counter|flip_flop:counter
-clk => number~reg0.CLK
-rst => number~reg0.ACLR
-number <= number~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => number[0]~reg0.CLK
+clk => number[1]~reg0.CLK
+clk => number[2]~reg0.CLK
+clk => number[3]~reg0.CLK
+clk => number[4]~reg0.CLK
+clk => number[5]~reg0.CLK
+rst => number[0]~reg0.ACLR
+rst => number[1]~reg0.ACLR
+rst => number[2]~reg0.ACLR
+rst => number[3]~reg0.ACLR
+rst => number[4]~reg0.ACLR
+rst => number[5]~reg0.ACLR
+number[0] <= number[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+number[1] <= number[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+number[2] <= number[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+number[3] <= number[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+number[4] <= number[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+number[5] <= number[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter|deco:deco_display
-number => Decoder0.IN0
-result[0] <= <VCC>
-result[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= <GND>
-result[5] <= <GND>
-result[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= <VCC>
-result[8] <= <VCC>
-result[9] <= <VCC>
-result[10] <= <VCC>
-result[11] <= <VCC>
-result[12] <= <VCC>
-result[13] <= <VCC>
+number[0] => Ram0.RADDR
+number[1] => Ram0.RADDR1
+number[2] => Ram0.RADDR2
+number[3] => Ram0.RADDR3
+number[4] => Ram0.RADDR4
+number[5] => Ram0.RADDR5
+result[0] <= Ram0.DATAOUT
+result[1] <= Ram0.DATAOUT1
+result[2] <= Ram0.DATAOUT2
+result[3] <= Ram0.DATAOUT3
+result[4] <= Ram0.DATAOUT4
+result[5] <= Ram0.DATAOUT5
+result[6] <= Ram0.DATAOUT6
+result[7] <= Ram0.DATAOUT7
+result[8] <= Ram0.DATAOUT8
+result[9] <= Ram0.DATAOUT9
+result[10] <= Ram0.DATAOUT10
+result[11] <= Ram0.DATAOUT11
+result[12] <= Ram0.DATAOUT12
+result[13] <= Ram0.DATAOUT13
 
 

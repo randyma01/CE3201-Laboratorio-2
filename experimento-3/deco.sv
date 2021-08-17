@@ -1,5 +1,6 @@
-module deco(
-  input logic number, 
+module deco #(parameter N=6)
+(
+  input logic [N-1:0] number, 
   output logic [13:0] result
 );
 

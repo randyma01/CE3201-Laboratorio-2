@@ -1,5 +1,5 @@
 Analysis & Synthesis report for experimento-3
-Tue Aug 17 09:47:08 2021
+Tue Aug 17 11:00:42 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,9 +14,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |counter
+ 10. Parameter Settings for User Entity Instance: flip_flop:counter
+ 11. Parameter Settings for User Entity Instance: deco:deco_display
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 17 09:47:08 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue Aug 17 11:00:42 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; experimento-3                               ;
 ; Top-level Entity Name           ; counter                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1                                           ;
+; Total registers                 ; 6                                           ;
 ; Total pins                      ; 16                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -178,31 +181,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1                        ;
-;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 1                        ;
-;     -- 7 input functions                    ; 0                        ;
-;     -- 6 input functions                    ; 0                        ;
-;     -- 5 input functions                    ; 0                        ;
-;     -- 4 input functions                    ; 0                        ;
-;     -- <=3 input functions                  ; 1                        ;
-;                                             ;                          ;
-; Dedicated logic registers                   ; 1                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 16                       ;
-;                                             ;                          ;
-; Total DSP Blocks                            ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; flip_flop:counter|number ;
-; Maximum fan-out                             ; 5                        ;
-; Total fan-out                               ; 24                       ;
-; Average fan-out                             ; 0.71                     ;
-+---------------------------------------------+--------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 14                          ;
+;                                             ;                             ;
+; Combinational ALUT usage for logic          ; 19                          ;
+;     -- 7 input functions                    ; 0                           ;
+;     -- 6 input functions                    ; 8                           ;
+;     -- 5 input functions                    ; 5                           ;
+;     -- 4 input functions                    ; 2                           ;
+;     -- <=3 input functions                  ; 4                           ;
+;                                             ;                             ;
+; Dedicated logic registers                   ; 6                           ;
+;                                             ;                             ;
+; I/O pins                                    ; 16                          ;
+;                                             ;                             ;
+; Total DSP Blocks                            ; 0                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; flip_flop:counter|number[3] ;
+; Maximum fan-out                             ; 16                          ;
+; Total fan-out                               ; 138                         ;
+; Average fan-out                             ; 2.42                        ;
++---------------------------------------------+-----------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,8 +213,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
-; |counter                   ; 1 (0)               ; 1 (0)                     ; 0                 ; 0          ; 16   ; 0            ; |counter                   ; flip_flop   ; work         ;
-;    |flip_flop:counter|     ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |counter|flip_flop:counter ; flip_flop   ; work         ;
+; |counter                   ; 19 (0)              ; 6 (0)                     ; 0                 ; 0          ; 16   ; 0            ; |counter                   ; flip_flop   ; work         ;
+;    |deco:deco_display|     ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter|deco:deco_display ; deco        ; work         ;
+;    |flip_flop:counter|     ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |counter|flip_flop:counter ; flip_flop   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,14 +225,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |counter ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 6     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: flip_flop:counter ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 6     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: deco:deco_display ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 6     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -236,16 +270,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1                           ;
-;     CLR               ; 1                           ;
-; arriav_lcell_comb     ; 3                           ;
-;     normal            ; 3                           ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
+; arriav_ff             ; 6                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 21                          ;
+;     normal            ; 21                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 8                           ;
 ; boundary_port         ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.33                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 17 09:46:55 2021
+    Info: Processing started: Tue Aug 17 11:00:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-3 -c experimento-3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -276,98 +314,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
     Info (12023): Found entity 1: counter File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter_tb.sv
     Info (12023): Found entity 1: counter_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file xmodule.sv
-    Info (12023): Found entity 1: xmodule File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/xmodule.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file xmodule_tb.sv
-    Info (12023): Found entity 1: xmodule_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/xmodule_tb.sv Line: 1
 Info (12127): Elaborating entity "counter" for the top level hierarchy
-Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:counter" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 9
-Warning (10230): Verilog HDL assignment warning at flip_flop.sv(15): truncated value with size 32 to match size of target (1) File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 15
-Info (12128): Elaborating entity "deco" for hierarchy "deco:deco_display" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 11
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(13): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 13
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(15): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 15
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(17): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 17
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(19): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 19
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(21): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 21
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(23): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 23
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(25): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 25
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(27): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 27
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(29): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 29
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(31): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 31
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(33): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 33
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(35): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 35
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(37): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 37
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(39): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 39
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(41): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 41
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(43): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 43
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(45): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 45
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(47): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 47
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(49): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 49
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(51): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 51
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(53): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 53
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(55): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 55
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(57): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 57
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(59): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 59
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(61): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 61
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(63): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 63
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(65): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 65
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(67): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 67
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(69): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 69
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(71): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 71
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(73): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 73
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(75): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 75
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(77): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 77
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(79): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 79
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(81): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 81
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(83): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 83
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(85): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 85
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(87): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 87
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(89): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 89
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(91): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 91
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(93): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 93
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(95): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 95
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(97): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 97
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(99): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 99
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(101): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 101
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(103): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 103
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(105): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 105
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(107): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 107
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(109): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 109
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(111): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 111
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(113): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 113
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(115): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 115
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(117): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 117
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(119): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 119
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(121): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 121
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(123): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 123
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(125): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 125
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(127): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 127
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(129): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 129
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(131): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 131
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(133): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 133
-Warning (10199): Verilog HDL Case Statement warning at deco.sv(135): case item expression never matches the case expression File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 135
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "result[0]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[4]" is stuck at GND File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[5]" is stuck at GND File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[7]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[8]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[9]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[10]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[11]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[12]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
-    Warning (13410): Pin "result[13]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 5
+Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:counter" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at flip_flop.sv(16): truncated value with size 32 to match size of target (6) File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 16
+Info (12128): Elaborating entity "deco" for hierarchy "deco:deco_display" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 12
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "deco:deco_display|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Tue Aug 17 09:47:08 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 19 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Tue Aug 17 11:00:42 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
 
 
