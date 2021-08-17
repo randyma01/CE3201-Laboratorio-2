@@ -1,19 +1,43 @@
-|xmodule
-clk => ~NO_FANOUT~
-rst => ~NO_FANOUT~
-result[0] << result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] << result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] << result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] << result[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] << result[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] << result[5].DB_MAX_OUTPUT_PORT_TYPE
-result[6] << result[6].DB_MAX_OUTPUT_PORT_TYPE
-result[7] << result[7].DB_MAX_OUTPUT_PORT_TYPE
-result[8] << result[8].DB_MAX_OUTPUT_PORT_TYPE
-result[9] << result[9].DB_MAX_OUTPUT_PORT_TYPE
-result[10] << result[10].DB_MAX_OUTPUT_PORT_TYPE
-result[11] << result[11].DB_MAX_OUTPUT_PORT_TYPE
-result[12] << result[12].DB_MAX_OUTPUT_PORT_TYPE
-result[13] << result[10].DB_MAX_OUTPUT_PORT_TYPE
+|counter
+clk => clk.IN1
+rst => rst.IN1
+result[0] << deco:deco_display.port1
+result[1] << deco:deco_display.port1
+result[2] << deco:deco_display.port1
+result[3] << deco:deco_display.port1
+result[4] << deco:deco_display.port1
+result[5] << deco:deco_display.port1
+result[6] << deco:deco_display.port1
+result[7] << deco:deco_display.port1
+result[8] << deco:deco_display.port1
+result[9] << deco:deco_display.port1
+result[10] << deco:deco_display.port1
+result[11] << deco:deco_display.port1
+result[12] << deco:deco_display.port1
+result[13] << deco:deco_display.port1
+
+
+|counter|flip_flop:counter
+clk => number~reg0.CLK
+rst => number~reg0.ACLR
+number <= number~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|deco:deco_display
+number => Decoder0.IN0
+result[0] <= <VCC>
+result[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= <VCC>
+result[8] <= <VCC>
+result[9] <= <VCC>
+result[10] <= <VCC>
+result[11] <= <VCC>
+result[12] <= <VCC>
+result[13] <= <VCC>
 
 

@@ -10,7 +10,7 @@ module flip_flop(
     if (rst)
 	   number<=0;
 	else if (number == 64)
-			number=0;
+			number<=0;
 		else
 			number<=number+1;
 	end

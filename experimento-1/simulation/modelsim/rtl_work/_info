@@ -8,56 +8,56 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/simulation/modelsim
+Z0 dC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/simulation/modelsim
 vconversor_bdc
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1629076142
+!s110 1629214118
 !i10b 1
 !s100 GQ4>oDOS[=l=;Q2bNJbPZ2
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I>X[Ml72k^8A]?1^[@j]gi2
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9?R3F:c5SU@ML9af=K6fj3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1629075307
-8C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc.sv
-FC:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc.sv
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv
 !i122 0
 L0 1 60
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1629076142.000000
-!s107 C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1|C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc.sv|
+Z5 !s108 1629214118.000000
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1
+Z8 tCvgOpt 0
 vconversor_bdc_tb
 R1
-R2
+!s110 1629214119
 !i10b 1
 !s100 NWlb@>gWR8OlN464:RGmi3
+R2
+ICZlzV8eDQW>fM^SSSzDk^0
 R3
-ITioiNna`N9VlZcioW62If1
-R4
 S1
 R0
 w1629076114
-8C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc_tb.sv
-FC:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc_tb.sv
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv
 !i122 1
 L0 1 34
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1|C:/Users/ranmsy/Desktop/laboratorio-2-codigos/experimento-1/conversor_bdc_tb.sv|
+R5
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv|
 !i113 1
+R6
 R7
 R8
-R9
