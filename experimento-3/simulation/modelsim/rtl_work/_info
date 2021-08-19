@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/simulation/modelsim
 vcounter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1629219535
+Z2 !s110 1629353539
 !i10b 1
 !s100 7=Kg_VFZ?k5VH:X>^`4]o3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1629219535.000000
+Z6 !s108 1629353539.000000
 !s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv|
 !i113 1
@@ -39,17 +39,17 @@ vcounter_tb
 R1
 R2
 !i10b 1
-!s100 lO@gV`?U]5UJEF`jlmoho0
+!s100 _8TNce<k[;IiGl3?Uf^co1
 R3
-IzJGcRE[z9=525j<[HnRzP2
+I1`m2@8[Q;S3YQc;NaldJa2
 R4
 S1
 R0
-w1629219490
+w1629219627
 8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv
 FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv
 !i122 3
-L0 1 55
+L0 1 47
 R5
 r1
 !s85 0
@@ -65,13 +65,13 @@ vdeco
 R1
 R2
 !i10b 1
-!s100 jX2^jYeczi[JPa4FW8kd]0
+!s100 ALUFfU<R62VgXo^2T1YmY0
 R3
-I^@H3HkZS0:7idjZh2:Bjk0
+IbkRoH`DjcOiknoGi;SPGf1
 R4
 S1
 R0
-w1629219486
+w1629349211
 8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv
 FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv
 !i122 1
@@ -91,13 +91,13 @@ vflip_flop
 R1
 R2
 !i10b 1
-!s100 CbEa0Fmf0Jb68iOl3IJ942
+!s100 lY;Tn:@Pi]TIJYU^V@Inb0
 R3
-IbLic5AUi2_:JcH4nG3f4z0
+IVf9[I]k<oPc8]6ZO?PHH>3
 R4
 S1
 R0
-w1629219467
+w1629352601
 8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv
 FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv
 !i122 0

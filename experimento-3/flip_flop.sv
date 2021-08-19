@@ -10,7 +10,7 @@ module flip_flop #(parameter N=6)
   begin
     if (!rst)
 	   number=0;
-	else if (number == 64)
+	else if (number == 2**N)
 			number=0;
 		else
 			number=number+1;

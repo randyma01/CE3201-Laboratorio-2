@@ -14,34 +14,34 @@ module counter_tb();
 	 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b11111110000001) else $display("SUCCESS: #0");
-	 $display(result); // b11111110000001 = 0
+	 assert (result === 14'b10000001111111) else $e$error("FAILED: @ #0");
+	 $display(result); // b10000001111111 = 0
 	 #10;
 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b11111111001111) else $display("SUCCESS: #0");
-	 $display(result); // b11111111001111 = 1
+	 assert (result === 14'b11110011111111) else $error("FAILED: @ #1");
+	 $display(result); // b11110011111111 = 1
 	 #10;
 	 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b11111110010010) else $display("SUCCESS: #0");
-	 $display(result); // b11111110010010 = 2
+	 assert (result === 14'b01001001111111) else $error("FAILED: @ #3");
+	 $display(result); // b01001001111111 = 2
 	 #10;
 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b11111110000110) else $display("SUCCESS: #0");
-	 $display(result); // b11111110000110 = 3
+	 assert (result === 14'b01100001111111) else $error("FAILED: @ #3");
+	 $display(result); // b01100001111111 = 3
 	 #10;
 	 
 	 $display("--- Reset ---");
 	 
 	 clk=0;
 	 rst=1;
-	 assert (result === 14'b11111110000001) else $display("SUCCESS: #0");
-	 $display(result);
+	 assert (result === 14'b10000001111111) else $error("FAILED: @ RESET");
+	 $display(result); // b10000001111111 = 0
 	 #10;
 	end
 endmodule 

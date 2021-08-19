@@ -1,5 +1,5 @@
 EDA Netlist Writer report for experimento-3
-Wed Aug 18 21:22:40 2021
+Wed Aug 18 23:58:19 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Aug 18 21:22:39 2021 ;
+; EDA Netlist Writer Status ; Successful - Wed Aug 18 23:58:19 2021 ;
 ; Revision Name             ; experimento-3                         ;
 ; Top-level Entity Name     ; counter                               ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                        ;
-+-------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                   ;
-+-------------------------------------------------------------------------------------------------------------------+
-; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/simulation/modelsim/experimento-3.vo ;
-+-------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                      ;
++-------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                 ;
++-------------------------------------------------------------------------------------------------+
+; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/simulation/modelsim/experimento-3.vo ;
++-------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Aug 18 21:22:39 2021
+    Info: Processing started: Wed Aug 18 23:58:18 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off experimento-3 -c experimento-3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file experimento-3.vo in folder "C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file experimento-3.vo in folder "C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Wed Aug 18 21:22:40 2021
+    Info: Processing ended: Wed Aug 18 23:58:19 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
