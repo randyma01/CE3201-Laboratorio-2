@@ -1,5 +1,5 @@
 Analysis & Synthesis report for experimento-1
-Tue Aug 17 21:00:34 2021
+Thu Aug 19 00:42:26 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 17 21:00:34 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Aug 19 00:42:26 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; experimento-1                               ;
 ; Top-level Entity Name           ; conversor_bdc                               ;
@@ -155,8 +155,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; conversor_bdc.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; conversor_bdc.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------+
@@ -260,21 +260,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 17 21:00:27 2021
+    Info: Processing started: Thu Aug 19 00:42:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-1 -c experimento-1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file conversor_bdc.sv
-    Info (12023): Found entity 1: conversor_bdc File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 1
+    Info (12023): Found entity 1: conversor_bdc File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conversor_bdc_tb.sv
-    Info (12023): Found entity 1: conversor_bdc_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv Line: 1
+    Info (12023): Found entity 1: conversor_bdc_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv Line: 1
 Info (12127): Elaborating entity "conversor_bdc" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at VCC File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
-    Warning (13410): Pin "display[3]" is stuck at VCC File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
-    Warning (13410): Pin "display[4]" is stuck at VCC File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
-    Warning (13410): Pin "display[5]" is stuck at VCC File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
-    Warning (13410): Pin "display[6]" is stuck at VCC File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
+    Warning (13410): Pin "display[0]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
+    Warning (13410): Pin "display[3]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
+    Warning (13410): Pin "display[4]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
+    Warning (13410): Pin "display[5]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
+    Warning (13410): Pin "display[6]" is stuck at VCC File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -283,9 +283,9 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Tue Aug 17 21:00:34 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Aug 19 00:42:26 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 
