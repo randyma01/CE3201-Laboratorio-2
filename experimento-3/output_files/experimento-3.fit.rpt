@@ -1,5 +1,5 @@
 Fitter report for experimento-3
-Wed Aug 18 23:57:55 2021
+Thu Aug 19 10:28:00 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Aug 18 23:57:55 2021       ;
+; Fitter Status                   ; Successful - Thu Aug 19 10:28:00 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; experimento-3                               ;
 ; Top-level Entity Name           ; counter                                     ;
@@ -1730,18 +1730,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.38 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.37 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/output_files/experimento-3.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6550 megabytes
-    Info: Processing ended: Wed Aug 18 23:57:56 2021
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:13
+    Info: Peak virtual memory: 6551 megabytes
+    Info: Processing ended: Thu Aug 19 10:28:00 2021
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:18
 
 
 +----------------------------+

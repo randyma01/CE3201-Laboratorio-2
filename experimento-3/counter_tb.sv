@@ -14,7 +14,7 @@ module counter_tb();
 	 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b10000001111111) else $e$error("FAILED: @ #0");
+	 assert (result === 14'b10000001111111) else $error("FAILED: @ #0");
 	 $display(result); // b10000001111111 = 0
 	 #10;
 

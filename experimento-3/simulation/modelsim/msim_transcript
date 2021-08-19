@@ -12,77 +12,84 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:12:19 on Aug 19,2021
+# Start time: 09:46:14 on Aug 19,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv 
 # -- Compiling module flip_flop
 # 
 # Top level modules:
 # 	flip_flop
-# End time: 00:12:19 on Aug 19,2021, Elapsed time: 0:00:00
+# End time: 09:46:14 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:12:19 on Aug 19,2021
+# Start time: 09:46:14 on Aug 19,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv 
 # -- Compiling module deco
 # 
 # Top level modules:
 # 	deco
-# End time: 00:12:19 on Aug 19,2021, Elapsed time: 0:00:00
+# End time: 09:46:14 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:12:19 on Aug 19,2021
+# Start time: 09:46:14 on Aug 19,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 00:12:19 on Aug 19,2021, Elapsed time: 0:00:00
+# End time: 09:46:14 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3 {C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:12:19 on Aug 19,2021
+# Start time: 09:46:15 on Aug 19,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3" C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv 
 # -- Compiling module counter_tb
 # 
 # Top level modules:
 # 	counter_tb
-# End time: 00:12:19 on Aug 19,2021, Elapsed time: 0:00:00
+# End time: 09:46:15 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  counter_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" counter_tb 
-# Start time: 00:12:19 on Aug 19,2021
+# Start time: 09:46:15 on Aug 19,2021
 # Loading sv_std.std
 # Loading work.counter_tb
 # Loading work.counter
 # Loading work.flip_flop
 # Loading work.deco
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$e$error' is not defined.
+#    Time: 0 ps  Iteration: 0  Region: /counter_tb/#ublk#95084642#8 File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 17
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ranmsy  Hostname: RANDYMARTINC4C4  ProcessID: 5632
-#           Attempting to use alternate WLF file "./wlftekh1xg".
+#           Attempting to use alternate WLF file "./wlftb8d3sm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftekh1xg
+#           Using alternate file: ./wlftb8d3sm
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Start testbench 2-bits !!!
-# SUCCESS: #0
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$e$error'
+#    Time: 10 ps  Iteration: 0  Process: /counter_tb/#INITIAL#8(#ublk#95084642#8) File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 17
 # 16383
-# SUCCESS: #0
+# ** Error: FAILED: @ #1
+#    Time: 20 ps  Scope: counter_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 23
 #  8319
-# SUCCESS: #0
+# ** Error: FAILED: @ #3
+#    Time: 30 ps  Scope: counter_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 29
 #  8319
-# SUCCESS: #0
+# ** Error: FAILED: @ #3
+#    Time: 40 ps  Scope: counter_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 35
 #  8319
 # --- Reset ---
-# SUCCESS: #0
 #  8319
-# End time: 00:21:33 on Aug 19,2021, Elapsed time: 0:09:14
-# Errors: 0, Warnings: 2
+run -all
+run
+# End time: 10:28:50 on Aug 19,2021, Elapsed time: 0:42:35
+# Errors: 4, Warnings: 3
