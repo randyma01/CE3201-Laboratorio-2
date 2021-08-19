@@ -1,5 +1,5 @@
 Analysis & Synthesis report for experimento-3
-Tue Aug 17 11:00:42 2021
+Wed Aug 18 21:21:57 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 17 11:00:42 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Aug 18 21:21:57 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; experimento-3                               ;
 ; Top-level Entity Name           ; counter                                     ;
@@ -158,27 +158,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; flip_flop.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv ;         ;
-; deco.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv      ;         ;
-; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv   ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; flip_flop.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/flip_flop.sv ;         ;
+; deco.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/deco.sv      ;         ;
+; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/counter.sv   ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------+
@@ -302,24 +302,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 17 11:00:30 2021
+    Info: Processing started: Wed Aug 18 21:21:50 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-3 -c experimento-3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.sv
-    Info (12023): Found entity 1: flip_flop File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 1
+    Info (12023): Found entity 1: flip_flop File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco.sv
-    Info (12023): Found entity 1: deco File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 1
+    Info (12023): Found entity 1: deco File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: counter File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 1
+    Info (12023): Found entity 1: counter File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter_tb.sv
-    Info (12023): Found entity 1: counter_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 1
+    Info (12023): Found entity 1: counter_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/counter_tb.sv Line: 1
 Info (12127): Elaborating entity "counter" for the top level hierarchy
-Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:counter" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at flip_flop.sv(16): truncated value with size 32 to match size of target (6) File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 16
-Info (12128): Elaborating entity "deco" for hierarchy "deco:deco_display" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 12
+Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:counter" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at flip_flop.sv(16): truncated value with size 32 to match size of target (6) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/flip_flop.sv Line: 16
+Info (12128): Elaborating entity "deco" for hierarchy "deco:deco_display" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/counter.sv Line: 12
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "deco:deco_display|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 9
+    Info (276004): RAM logic "deco:deco_display|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-3/deco.sv Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -328,9 +328,9 @@ Info (21057): Implemented 35 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 19 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Tue Aug 17 11:00:42 2021
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Wed Aug 18 21:21:57 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:17
 
 

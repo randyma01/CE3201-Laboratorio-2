@@ -5,15 +5,15 @@ module flip_flop #(parameter N=6)
   output logic [N-1:0] number
 );
 
-  always_ff@(posedge clk, posedge rst)
+  always_ff@(posedge clk or negedge rst)
   
   begin
-    if (rst)
-	   number<=0;
+    if (!rst)
+	   number=0;
 	else if (number == 64)
-			number<=0;
+			number=0;
 		else
-			number<=number+1;
+			number=number+1;
 	end
 	
 endmodule 
