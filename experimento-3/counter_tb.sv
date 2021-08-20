@@ -6,41 +6,40 @@ module counter_tb();
   counter test(clk, rst, result);
   
   initial begin
-    $display("Start testbench 2-bits !!!");
+    $display("Start testbench !!!");
 	 
 	 clk=0;
 	 rst=1;
+	 $display(result); // x
 	 #10;
 	 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b10000001111111) else $error("FAILED: @ #0");
-	 $display(result); // b10000001111111 = 0
-	 #10;
-
-	 clk=1;
-	 rst=0;
-	 assert (result === 14'b11110011111111) else $error("FAILED: @ #1");
+	 assert(result !== 14'b11110011111111) else $error("FAILED: @ #1");
 	 $display(result); // b11110011111111 = 1
 	 #10;
 	 
+
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b01001001111111) else $error("FAILED: @ #3");
-	 $display(result); // b01001001111111 = 2
+	 assert(result !== 14'b01001001111111) else $error("FAILED: @ #2");
+	 $display(result); // b01001001111111 = 1
+	 #10;
+	 
+	 clk=1;
+	 rst=0;
+	 assert(result !== 14'b01100001111111) else $error("FAILED: @ #3");
+	 $display(result); // b01100001111111 = 3
 	 #10;
 
 	 clk=1;
 	 rst=0;
-	 assert (result === 14'b01100001111111) else $error("FAILED: @ #3");
-	 $display(result); // b01100001111111 = 3
+	 assert(result !== 14'b00110011111111) else $error("FAILED: @ #4");
+	 $display(result); // b00110011111111 = 4
 	 #10;
-	 
-	 $display("--- Reset ---");
 	 
 	 clk=0;
 	 rst=1;
-	 assert (result === 14'b10000001111111) else $error("FAILED: @ RESET");
 	 $display(result); // b10000001111111 = 0
 	 #10;
 	end

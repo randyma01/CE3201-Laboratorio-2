@@ -11,12 +11,12 @@ cModel Technology
 Z0 dC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/simulation/modelsim
 vconversor_bdc
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1629355211
+!s110 1629400013
 !i10b 1
 !s100 HBGL_nGTAGUK1JlWCU[Pa2
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IaRX?hboa=oT7lFOFH=OQz0
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1629353998
@@ -24,40 +24,40 @@ w1629353998
 FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv
 !i122 0
 L0 1 45
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1629355211.000000
+Z5 !s108 1629400013.000000
 !s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1
+Z8 tCvgOpt 0
 vconversor_bdc_tb
 R1
-R2
+!s110 1629400014
 !i10b 1
 !s100 ME6J=mzdDOEb7`F=Rk3ca1
-R3
+R2
 I:7W88Y>lfi;Jn<XC:eaAS3
-R4
+R3
 S1
 R0
-w1629355183
+w1629355332
 8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv
 FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv
 !i122 1
 L0 1 27
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-2/experimento-1/conversor_bdc_tb.sv|
 !i113 1
+R6
 R7
 R8
-R9
