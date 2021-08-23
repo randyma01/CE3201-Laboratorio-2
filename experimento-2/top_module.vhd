@@ -17,20 +17,22 @@ architecture STRUCTURE of top_module is
 		component fourBitFullAdder
 			port( a, b		: in  STD_LOGIC_VECTOR;
 					sum4: out STD_LOGIC_VECTOR;
-					cout: STD_LOGIC);
+					cout: out STD_LOGIC);
 		end component;
 		
-		--Utilizamos el decodificador creado anteriormente
+	--Utilizamos el decodificador creado anteriormente
 		component decoder 
 			port (d : in STD_LOGIC_VECTOR;
 					z : out STD_LOGIC_VECTOR);
 		end component;
 
  signal temp : STD_LOGIC_VECTOR(3 downto 0);
- 
+ --signal ld: STD_LOGIC;
+
 begin
 	
 		tm: fourBitFullAdder port map(sw1,sw2,temp,led);
 		dec: decoder port map(temp,z);
+		--led <= ld;
 
 end STRUCTURE; 

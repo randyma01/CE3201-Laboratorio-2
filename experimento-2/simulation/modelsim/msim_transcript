@@ -12,30 +12,30 @@
 # 
 # vcom -93 -work work {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:36:56 on Aug 22,2021
+# Start time: 13:43:01 on Aug 23,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity oneBitFullAdder
-# -- Compiling architecture BHV of oneBitFullAdder
-# End time: 20:36:56 on Aug 22,2021, Elapsed time: 0:00:00
+# -- Compiling architecture Behavioral of oneBitFullAdder
+# End time: 13:43:01 on Aug 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:36:56 on Aug 22,2021
+# Start time: 13:43:01 on Aug 23,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity fourBitFullAdder
 # -- Compiling architecture STRUCTURE of fourBitFullAdder
-# End time: 20:36:56 on Aug 22,2021, Elapsed time: 0:00:00
+# End time: 13:43:01 on Aug 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:36:57 on Aug 22,2021
+# Start time: 13:43:01 on Aug 23,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,18 +43,18 @@
 # -- Compiling entity tb_fourBitFullAdder
 # -- Compiling architecture TEST of tb_fourBitFullAdder
 # -- Loading entity fourBitFullAdder
-# End time: 20:36:57 on Aug 22,2021, Elapsed time: 0:00:00
+# End time: 13:43:02 on Aug 23,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  tb_fourBitFullAdder
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" tb_fourBitFullAdder 
-# Start time: 20:36:57 on Aug 22,2021
+# Start time: 13:43:02 on Aug 23,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb_fourbitfulladder(test)
 # Loading work.fourbitfulladder(structure)
-# Loading work.onebitfulladder(bhv)
+# Loading work.onebitfulladder(behavioral)
 # 
 # add wave *
 # view structure
@@ -63,6 +63,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit
-# Simulation stop requested.
-# End time: 20:48:58 on Aug 22,2021, Elapsed time: 0:12:01
+# Break in Process line__27 at C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd line 54
+# End time: 13:44:48 on Aug 23,2021, Elapsed time: 0:01:46
 # Errors: 0, Warnings: 0

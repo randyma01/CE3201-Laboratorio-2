@@ -7,15 +7,14 @@ sw2[0] => fourBitFullAdder:tm.b[0]
 sw2[1] => fourBitFullAdder:tm.b[1]
 sw2[2] => fourBitFullAdder:tm.b[2]
 sw2[3] => fourBitFullAdder:tm.b[3]
-z[0] <= decoder:dec.z[0]
-z[1] <= decoder:dec.z[1]
-z[2] <= decoder:dec.z[2]
-z[3] <= decoder:dec.z[3]
-z[4] <= decoder:dec.z[4]
-z[5] <= decoder:dec.z[5]
-z[6] <= decoder:dec.z[6]
-led[0] <= fourBitFullAdder:tm.cout[0]
-led[1] <= fourBitFullAdder:tm.cout[1]
+z[0] << decoder:dec.z[0]
+z[1] << decoder:dec.z[1]
+z[2] << decoder:dec.z[2]
+z[3] << decoder:dec.z[3]
+z[4] << decoder:dec.z[4]
+z[5] << decoder:dec.z[5]
+z[6] << decoder:dec.z[6]
+led << fourBitFullAdder:tm.cout
 
 
 |top_module|fourBitFullAdder:tm

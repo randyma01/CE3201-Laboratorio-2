@@ -31,10 +31,10 @@ architecture Behavioral of decoder is
 			when "1000" => z <= "0000000";
 			when "1001" => z <= "0011000";
 			when "1010" => z <= "0001000"; --A
-			when "1011" => z <= "0000111"; --b
+			when "1011" => z <= "0000011"; --b
 			when "1100" => z <= "1000110"; --C
-			when "1101" => z <= "0100010"; --d
-			when "1110" => z <= "0000011"; --E
+			when "1101" => z <= "0100001"; --d
+			when "1110" => z <= "0000110"; --E
 			when "1111" => z <= "0001110"; --F
          when others => z <= "1111111"; -- 7 segmentos apagado
        
