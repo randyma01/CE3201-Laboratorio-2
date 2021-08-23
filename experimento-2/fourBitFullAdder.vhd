@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity fourBitFullAdder is
 	port( a, b		: in	STD_LOGIC_VECTOR(3 downto 0);
 	      sum4		: out	STD_LOGIC_VECTOR(3 downto 0);
-	      cout		: out	STD_LOGIC		);
+	      cout		: out	STD_LOGIC);
 end fourBitFullAdder;
 
 

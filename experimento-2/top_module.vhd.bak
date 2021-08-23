@@ -1,0 +1,21 @@
+library IEEE; use IEEE.STD_LOGIC_1164.all;
+use IEEE. NUMERIC_STD_UNSIGNED.all;
+
+entity top_module is
+
+	port(sw: in STD_LOGIC_VECTOR(7 downto 0);
+			z: out STD_LOGIC_VECTOR(6 downto 0)
+			led: out STD_LOGIC_VECTOR(1 downto 0));
+
+end;
+
+architecture STRUCTURE of top_module is
+
+	--Utilizamos el sumador completo de 4 bits creado anteriormente
+
+		component oneBitFullAdder
+			port( a, b		: in  STD_LOGIC;
+					sum4, cout		: out STD_LOGIC );
+		end component;
+
+end STRUCTURE; 

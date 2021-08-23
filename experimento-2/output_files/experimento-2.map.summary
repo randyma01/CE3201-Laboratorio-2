@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Aug 22 20:36:48 2021
+Analysis & Elaboration Status : Failed - Mon Aug 23 00:25:24 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : experimento-2
-Top-level Entity Name : fourBitFullAdder
+Top-level Entity Name : top_module
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

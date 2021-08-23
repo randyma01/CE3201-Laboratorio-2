@@ -1,4 +1,24 @@
-|fourBitFullAdder
+|top_module
+sw1[0] => fourBitFullAdder:tm.a[0]
+sw1[1] => fourBitFullAdder:tm.a[1]
+sw1[2] => fourBitFullAdder:tm.a[2]
+sw1[3] => fourBitFullAdder:tm.a[3]
+sw2[0] => fourBitFullAdder:tm.b[0]
+sw2[1] => fourBitFullAdder:tm.b[1]
+sw2[2] => fourBitFullAdder:tm.b[2]
+sw2[3] => fourBitFullAdder:tm.b[3]
+z[0] <= decoder:dec.z[0]
+z[1] <= decoder:dec.z[1]
+z[2] <= decoder:dec.z[2]
+z[3] <= decoder:dec.z[3]
+z[4] <= decoder:dec.z[4]
+z[5] <= decoder:dec.z[5]
+z[6] <= decoder:dec.z[6]
+led[0] <= fourBitFullAdder:tm.cout[0]
+led[1] <= fourBitFullAdder:tm.cout[1]
+
+
+|top_module|fourBitFullAdder:tm
 a[0] => oneBitFullAdder:b_adder0.a
 a[1] => oneBitFullAdder:b_adder1.a
 a[2] => oneBitFullAdder:b_adder2.a
@@ -7,14 +27,14 @@ b[0] => oneBitFullAdder:b_adder0.b
 b[1] => oneBitFullAdder:b_adder1.b
 b[2] => oneBitFullAdder:b_adder2.b
 b[3] => oneBitFullAdder:b_adder3.b
-sum4[0] << oneBitFullAdder:b_adder0.sum
-sum4[1] << oneBitFullAdder:b_adder1.sum
-sum4[2] << oneBitFullAdder:b_adder2.sum
-sum4[3] << oneBitFullAdder:b_adder3.sum
-cout << oneBitFullAdder:b_adder3.cout
+sum4[0] <= oneBitFullAdder:b_adder0.sum
+sum4[1] <= oneBitFullAdder:b_adder1.sum
+sum4[2] <= oneBitFullAdder:b_adder2.sum
+sum4[3] <= oneBitFullAdder:b_adder3.sum
+cout <= oneBitFullAdder:b_adder3.cout
 
 
-|fourBitFullAdder|oneBitFullAdder:b_adder0
+|top_module|fourBitFullAdder:tm|oneBitFullAdder:b_adder0
 a => sum.IN0
 a => sum.IN0
 a => sum.IN0
@@ -34,7 +54,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fourBitFullAdder|oneBitFullAdder:b_adder1
+|top_module|fourBitFullAdder:tm|oneBitFullAdder:b_adder1
 a => sum.IN0
 a => sum.IN0
 a => sum.IN0
@@ -54,7 +74,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fourBitFullAdder|oneBitFullAdder:b_adder2
+|top_module|fourBitFullAdder:tm|oneBitFullAdder:b_adder2
 a => sum.IN0
 a => sum.IN0
 a => sum.IN0
@@ -74,7 +94,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fourBitFullAdder|oneBitFullAdder:b_adder3
+|top_module|fourBitFullAdder:tm|oneBitFullAdder:b_adder3
 a => sum.IN0
 a => sum.IN0
 a => sum.IN0
@@ -92,5 +112,43 @@ cin => sum.IN1
 cin => cout.IN1
 sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_module|decoder:dec
+d[0] => Mux0.IN19
+d[0] => Mux1.IN19
+d[0] => Mux2.IN19
+d[0] => Mux3.IN19
+d[0] => Mux4.IN19
+d[0] => Mux5.IN19
+d[0] => Mux6.IN19
+d[1] => Mux0.IN18
+d[1] => Mux1.IN18
+d[1] => Mux2.IN18
+d[1] => Mux3.IN18
+d[1] => Mux4.IN18
+d[1] => Mux5.IN18
+d[1] => Mux6.IN18
+d[2] => Mux0.IN17
+d[2] => Mux1.IN17
+d[2] => Mux2.IN17
+d[2] => Mux3.IN17
+d[2] => Mux4.IN17
+d[2] => Mux5.IN17
+d[2] => Mux6.IN17
+d[3] => Mux0.IN16
+d[3] => Mux1.IN16
+d[3] => Mux2.IN16
+d[3] => Mux3.IN16
+d[3] => Mux4.IN16
+d[3] => Mux5.IN16
+d[3] => Mux6.IN16
+z[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+z[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+z[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+z[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

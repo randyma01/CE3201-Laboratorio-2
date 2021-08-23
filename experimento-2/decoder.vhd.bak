@@ -1,0 +1,45 @@
+library IEEE; use IEEE.STD_LOGIC_1164.all;
+use IEEE. NUMERIC_STD_UNSIGNED.all;
+
+entity decoder is
+
+	generic(N: integer := 4);
+	--Especificamos entradas y salidas
+	port(a: in STD_LOGIC_VECTOR(N–1 downto 0);
+			z: out STD_LOGIC_VECTOR(2**N–1 downto 0));
+			
+end;
+
+-- definimos el comportamiento del deco
+architecture synth of decoder is
+	begin
+	
+	process(all)
+		begin
+		
+		z <= "1111111";        -- valor default de salida
+		
+		case a is
+			
+			when "0000" => X(0) <= "1000000";
+         when "0001" => X(1) <= "1111001";
+         when "0010" => X(2) <= "0100100";
+         when "0011" => X(3) <= "0110000";
+			when "0100" => X(4) <= "0011001";
+         when "0101" => X(5) <= "0010010";
+			when "0110" => X(6) <= "0000010";
+			when "0111" => X(7) <= "1111000";
+			when "1000" => X(8) <= "0000000";
+			when "1001" => X(9) <= "0011000";
+			when "1010" => X(10) <= "0001000"; --A
+			when "1011" => X(11) <= "0000111"; --b
+			when "1100" => X(12) <= "1000110"; --C
+			when "1101" => X(13) <= "0100010"; --d
+			when "1110" => X(14) <= "0000011"; --E
+			when "1111" => X(15) <= "0001110"; --F
+         when others => X <= "1111111";
+       
+		end case;
+			
+	end process;
+end;
