@@ -1,0 +1,135 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/simulation/modelsim
+Efourbitfulladder
+Z1 w1629680364
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd
+Z5 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd
+l0
+L4 1
+VIL`DO5c=EQkfUcg9Q`_4b3
+!s100 ZOHE47@b?ag[J4^CQAh8V1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1629686216
+!i10b 1
+Z8 !s108 1629686216.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd|
+Z10 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/fourBitFullAdder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+Z13 DEx4 work 16 fourbitfulladder 0 22 IL`DO5c=EQkfUcg9Q`_4b3
+!i122 1
+l24
+L11 25
+VQX?Cb1Ec8CoS7nGn_S8b<1
+!s100 enXHXn9[fXJWJc?=?4jVB2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eonebitfulladder
+Z14 w1629583098
+R2
+R3
+!i122 0
+R0
+Z15 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd
+Z16 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd
+l0
+L5 1
+V2bnGnN:4EdR<Rf]?6[IVA1
+!s100 6b@=>nM1CkAXD<`k3>0^k3
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd|
+Z18 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/oneBitFullAdder.vhd|
+!i113 1
+R11
+R12
+Abhv
+R2
+R3
+DEx4 work 15 onebitfulladder 0 22 2bnGnN:4EdR<Rf]?6[IVA1
+!i122 0
+l11
+L10 17
+V?A:Ea[f:^6:Zz0gaG2[GB2
+!s100 2ch7F6n=@kLmS@VF=gano2
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Etb_fourbitfulladder
+Z19 w1629686199
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd
+Z21 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd
+l0
+L6 1
+V^[Cgh<B1_H5Bo6b_9j[G]1
+!s100 66oVnj545;c:ZNdS_O3kl1
+R6
+31
+Z22 !s110 1629686217
+!i10b 1
+Z23 !s108 1629686217.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd|
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd|
+!i113 1
+R11
+R12
+Atest
+R13
+R2
+R3
+DEx4 work 19 tb_fourbitfulladder 0 22 ^[Cgh<B1_H5Bo6b_9j[G]1
+!i122 2
+l23
+L10 96
+V3BazTJL_cMOhz:SBBif2a0
+!s100 WGHKMkN2fH3`L>iWKQzI00
+R6
+31
+R22
+!i10b 1
+R23
+R24
+Z25 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-2/experimento-2/tb_fourBitFullAdder.vhd|
+!i113 1
+R11
+R12
